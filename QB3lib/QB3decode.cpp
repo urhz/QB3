@@ -48,7 +48,7 @@ qb3_mode qb3_get_mode(const decsp p) {
     return p->mode;
 }
 
-uint64_t qb3_get_quanta(const decsp p) {
+size_t qb3_get_quanta(const decsp p) {
     if (p->stage != 2)
         return 0; // Error
     return p->quanta;
